@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/instrument-methods.svg?style=flat-square)](https://www.npmjs.com/package/instrument-methods)
+[![Build Status](https://img.shields.io/travis/markdalgleish/instrument-methods/master.svg?style=flat-square)](http://travis-ci.org/markdalgleish/instrument-methods) [![npm](https://img.shields.io/npm/v/instrument-methods.svg?style=flat-square)](https://www.npmjs.com/package/instrument-methods)
 
 # instrument-methods
 
