@@ -1,6 +1,6 @@
 {
   "name": "instrument-methods",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Simple object method instrumentation",
   "main": "dist/index.js",
   "scripts": {
