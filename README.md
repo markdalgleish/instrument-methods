@@ -30,7 +30,7 @@ instance.doThat();
 // "doThat" was called!
 ```
 
-Even though it modifies the original object, `instrumentMethods` also returns a reference to the original object so it can be used as part of an expression:
+Even though it modifies the object, `instrumentMethods` also returns a reference to the modified object so it can be used as part of an expression:
 
 ```js
 const after = methodName => console.log(`"${methodName}" was called!`);
