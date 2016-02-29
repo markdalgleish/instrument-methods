@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/v/instrument-methods.svg?style=flat-square)](https://www.npmjs.com/package/instrument-methods)
+
 # instrument-methods
 
 Simple object method instrumentation.
