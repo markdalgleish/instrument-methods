@@ -7,8 +7,10 @@ export default (instance, { before = noop, after = noop }) => {
 
       instance[methodName] = function() {
         before(methodName);
-        originalMethod.apply(this, arguments);
+        const returnVal = originalMethod.apply(this, arguments);
         after(methodName);
+
+        return returnVal;
       };
     }
   });
