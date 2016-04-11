@@ -19,15 +19,15 @@ const instance = {
 };
 
 instrumentMethods(instance, {
-  before: methodName => console.log(`"${methodName}" is about to be called!`),
-  after: methodName => console.log(`"${methodName}" was called!`)
+  before: (methodName, args) => console.log(`"${methodName}" is about to be called!`, ...args),
+  after: (methodName, argS) => console.log(`"${methodName}" was called!`, ...args)
 });
 
-instance.doThat();
+instance.doThat(1, 2, 3);
 
 // Logs:
-// "doThat" is about to be called!
-// "doThat" was called!
+// "doThat" is about to be called!, 1, 2, 3
+// "doThat" was called!, 1, 2, 3
 ```
 
 Even though it modifies the object, `instrumentMethods` also returns a reference to the modified object so it can be used as part of an expression:

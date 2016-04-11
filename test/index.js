@@ -29,6 +29,10 @@ describe('instrument-methods', () => {
           expect(instrumentationSpy.getCall(0).args[0]).to.equal('method');
         });
 
+        it('Should call the provided function with the arguments', () => {
+          expect(Array.from(instrumentationSpy.getCall(0).args[1])).to.deep.equal([1, 2, 3]);
+        });
+
         it('Should call the original method with correct context', () => {
           expect(methodStub.getCall(0).thisValue).to.equal(object);
         });

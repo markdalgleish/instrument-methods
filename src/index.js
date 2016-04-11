@@ -6,9 +6,9 @@ export default (instance, { before = noop, after = noop }) => {
       const originalMethod = instance[methodName];
 
       instance[methodName] = function() {
-        before(methodName);
+        before(methodName, arguments);
         const returnVal = originalMethod.apply(this, arguments);
-        after(methodName);
+        after(methodName, arguments);
 
         return returnVal;
       };
